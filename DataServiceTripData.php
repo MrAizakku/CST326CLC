@@ -1,6 +1,6 @@
 <?php
 require_once 'Autoloader.php';
-class DataServiceTrip {
+class DataServiceTripData {
     private $conn;
     
     function __construct($mysqli) {
