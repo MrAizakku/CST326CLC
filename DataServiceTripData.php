@@ -31,13 +31,12 @@ class DataServiceTripData {
     }
     
     function findTripByRef($n) {
-        $stmt = $this->conn->prepare("SELECT * FROM CATALOG WHERE TRIP_REF = ?");
+        $stmt = $this->conn->prepare("SELECT * FROM TRIPDATA WHERE TRIP_REF = ?");
         $stmt->bind_param("s", $n);
         
         $stmt->execute();
         
         $result = $stmt->get_result();
-        
         if(!$result) {
             echo "assume the SQL statement has an issue...";
             return null;

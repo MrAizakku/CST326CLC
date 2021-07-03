@@ -27,7 +27,7 @@
         <div class="input-group">
           <div class="d-flex">
             <form action="lookupHandler.php" method="GET" class="d-flex" style="margin-bottom:0">
-              <input type="text" id="input" name="input" class="form-control" placeholder="Lookup Trip" required>
+              <input type="text" id="input" name="input" class="form-control" placeholder="Lookup Trip..." required>
               <span class="input-group-btn">
                 <input class="btn btn-outline-success" type="submit">
               </span>
