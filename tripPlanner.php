@@ -59,6 +59,8 @@ if($fromDate != null && $toDate != null && $fromDate != "" && $toDate != "" &&
     echo "<div class='alert alert-success'>Trip dates: " . $fromDate . " to " .  $toDate."</div>";
     //$db = new BusinessService();
     //$results
+} else if ($fromDate == null && $toDate == null && $fromDate == "" && $toDate == ""){
+    //
 } else {
     echo "<div class='alert alert-danger'>Error with dates.</div>";
 }
